@@ -1,0 +1,31 @@
+html {
+	font-family: "Arial Narrow", "Times New Roman", serif;
+	font-size: 1rem;
+}
+
+table {
+	border: 2px solid #a3a3c2;
+	border-collapse: collapse;
+	letter-spacing: 1px;
+}
+th, td {
+	border: 1px solid #a3a3c2;
+	padding: 12px;
+}
+
+th {
+	background-color: #d1d1e0;
+	}
+
+td {
+	text-align: center;
+}
+tr:nth-child(even) td {
+	background-color: #dae6f1;
+}
+tr:nth-child(odd) td {
+	background-color: #ecf2f9;
+}
+caption {
+	padding: 10px;
+}
