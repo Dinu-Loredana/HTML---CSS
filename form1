@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>User Form</title>
+	<style>
+		table {
+			width: 50%;
+			font-family: arial;
+			font-size: 1rem;
+			background-color: #85adad;
+			margin: 50px;
+
+			}
+
+			.center {
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			.diff {
+				width: 70%;
+			}
+
+			.button {
+				text-align: center;
+				height: 10%;
+				padding: 7px;
+				font-size: 20px;
+				color: #ffffff;
+				background-color: #1f2e2e;
+			}
+
+			.button:hover {
+				background-color: green;
+			}
+
+		table, tr, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+
+		th {
+			font-size: 30px;
+			font-style: italic;
+			color: #ffffff;
+			background-color: #1f2e2e;
+			padding: 5px;
+		}
+
+		input, textarea, select {
+			background-color: #e0ebeb;
+		}
+
+
+	</style>
+</head>
+
+<body>
+<form action="/action_page.php" method="post" target="_blank">
+	<table class="center">
+<thead>		
+<tr>
+	<th colspan="2">User Form</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>
+		<label for="name">Enter Name</label>
+	</td>
+	<td>
+		<input type="text" id="name" name="name" autofocus="on" class="diff" required="">
+	</td>
+</tr>
+<tr>
+	<td>
+		<label for="pass">Enter Password</label>
+	</td>
+	<td>
+		<input type="password" id="pass" name="pass" autofocus="on" class="diff" required="">
+	</td>
+</tr>
+<tr>
+	<td>
+		<label for="address">Enter Address</label>
+	</td>
+	<td>
+		<textarea id="address" name="address" class="diff"></textarea>
+	</td>
+</tr>
+<!-- Checkbox -->
+<tr>
+	<td>
+		<label for="game">Select Game</label>
+	</td>
+	<td required>
+		<input type="checkbox" id="hockey" name="hockey">
+		<label for="hockey">Hockey</label><br>
+		<input type="checkbox" id="football" name="football">
+		<label for="football">Football</label><br>
+		<input type="checkbox" id="cricket" name="cricket">
+		<label for="cricket">Cricket</label><br>
+		<input type="checkbox" id="badminton" name="badminton">
+		<label for="badminton">Badminton</label>
+	</td>
+</tr>
+
+<!-- Radio -->
+<tr>
+	<td>
+		<label>Gender</label>
+	</td>
+	<td>
+		<input type="radio" id="male" name="gender">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" checked="true">
+		<label for="female">Female</label>
+	</td>
+</tr>
+
+<!-- Select element-->
+<tr>
+	<td>
+		<label for="age">Select ur age</label>
+	</td>
+	<td>
+		<select id="age" name="age">
+			<option value="select" selected>select</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="more than 18">more than 18</option>
+		</select>
+	</td>
+</tr>
+
+<!-- Type"file" -->
+<tr>
+	<td colspan="2" style="text-align: center;">
+		<label for="file"></label>
+		<input type="file" id="file" name="file">
+	</td>
+</tr>
+
+<!-- Buttons -->
+<tr>
+	<td colspan="2">
+		<input type="submit" value="Submit" class="button">
+		<input type="reset" value="Reset" class="button">
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+</body>
+</html>
