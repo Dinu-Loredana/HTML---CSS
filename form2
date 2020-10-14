@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>User Form</title>
+	<style>
+		    body {
+			font-family: Comic Sans Ms;
+			  background-color: #bcd4c3;
+			  }
+		    li {
+			  text-transform: uppercase;
+			  letter-spacing: 5px;
+		    }
+	</style>
+</head>
+<body>
+<form action="" method="post" target="_blank">
+	<div style="margin: auto; width: 800px;">
+	<fieldset style="background-color: #639471; width: 700px; height: 500px; border:double; padding: 15px;">
+		<legend style="text-align: center; letter-spacing: 5px; font-size: 25px;">USER FORM</legend>
+
+<!-- Left side -->
+	<div style="width: 30%; float: left; padding: 20px;">
+		<p></p>
+		<li>Your Name</li>
+		<p></p>
+		<li>Password</li>
+		<p></p>
+		<li>Gender</li>
+		<p></p>
+		<li>Address</li>
+		<p style="height: 60px;"></p>
+		<li>D.O.B</li>
+		<p></p>
+		<li>Select Games</li>
+		<p></p>
+		<li>Status</li>
+	</div>
+
+<!-- Right side -->
+	<div style="width: 55%; float: right;padding: 20px;">
+		<p><input type="text" id="name" name="name"></p>
+		<p><input type="password" id="pass" name="pass"></p>
+		<p>
+			<input type="radio" id="male" name="gender">
+			<label for="male">Male</label>
+			<input type="radio" id="female" name="gender">
+			<label for="female">Female</label>
+		</p>
+		<p style="height: 100px;">
+			<textarea id="address" name="address" cols="20" rows="5"></textarea>
+		</p>
+		<p>
+			<select>
+				<option value="Jan-Apr">Jan-Apr</option>
+				<option value="May-Sep">May-Sep</option>
+				<option value="Oct-Dec">Oct-Dec</option>
+			</select>
+			<select>
+				<option value="1-10">1-10</option>
+				<option value="11-20">11-20</option>
+				<option value="21-31">21-31</option>
+			</select>
+			<select>
+				<option value="1970-1990">1970-1990</option>
+				<option value="1991-2010">1991-2010</option>
+				<option value="2011-2020">2011-2020</option>
+			</select>
+		</p>
+		<p>
+			<input type="checkbox" id="hockey" name="hockey">
+			<label for="hockey">Hockey</label>
+			<input type="checkbox" id="football" name="football">
+			<label for="football">Football</label>
+			<input type="checkbox" id="cricket" name="cricket">
+			<label for="cricket">Cricket</label>
+		</p>
+		<p>
+			<input type="radio" id="married" name="status">
+			<label for="married">Married</label>
+			<input type="radio" id="unmarried" name="status">
+			<label for="unmarried">Unmarried</label>
+		</p>
+		<p>
+		<input type="submit" name="Submit">
+		<input type="reset" name="Reset">
+		<br>
+		<br>
+		<input type="checkbox" id="agree" name="agree">
+		<label for="agree">I accept this agreement</label>
+		</p>
+	</div>		
+	</fieldset>
+	</div>
+</form>
+</body>
+</html>
