@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>User Form</title>
+	<style>
+		body {
+			font-family: Verdana;
+			letter-spacing: 1px;
+		}
+		table {
+			width: 600px;
+			height: 600px;
+			}
+
+			.centered {
+  				position: fixed;
+ 				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+			}
+
+			.submit {
+				background-color: #09ba21;
+				letter-spacing: 3px;
+				padding: 10px;
+				font-weight: bold;
+			}
+
+			.submit:hover {
+				border: 4px solid #b8140b;
+			}
+
+			.reset {
+				background-color: #cf9308;
+				letter-spacing: 3px;
+				padding: 10px;
+				font-weight: bold;
+			}
+
+			.reset:hover {
+				border: 4px solid #b8140b;
+				}
+
+
+	</style>
+</head>
+<body>
+<form>
+	<table class="centered">
+		<tbody>
+		<tr bgcolor="#66ba85">
+			<th colspan="2" align="center">Sign Up</th>
+		</tr>
+		<tr bgcolor="#9b9ba8">
+			<td align="right">First Name</td>
+			<td><input type="text" name="fname" placeholder="Enter your first name"></td>
+		</tr>
+		<tr bgcolor="#9b9ba8">
+			<td align="right">Last Name</td>
+			<td><input type="text" name="lname" placeholder="Enter your last name"></td>
+		</tr>
+		<tr bgcolor="#9b9ba8">
+			<td align="right">Gender</td>
+			<td>
+			<input type="radio" id="female" name="gender">
+			<label for="female">Female</label>
+			<input type="radio" id="male" name="gender">
+			<label for="male">Male</label>
+			<input type="radio" id="other" name="gender">
+			<label for="other">Other</label>
+			</td>
+		</tr>
+		<tr bgcolor="#9b9ba8">
+			<td align="right">I'm in my...</td>
+			<td><input type="number" id="age" name="age" min="10" max="80" step="10" value="10"></td>
+		</tr>
+		<tr bgcolor="#9b9ba8">
+			<td align="right">E-mail</td>
+			<td><input type="email" id="email" name="email"></td>	
+		</tr>
+		<tr bgcolor="#9b9ba8">
+			<td align="right">Phone</td>
+			<td><input type="tel" id="phone" name="phone"></td>
+		</tr>
+		<tr bgcolor="#9b9ba8">
+			<td align="right">Password</td>
+			<td><input type="password" id="pass" name="pass"></td>
+		</tr>
+		<tr bgcolor="#9b9ba8">
+			<td align="right">Confirm Password</td>
+			<td><input type="password" id="pass1" name="pass1"></td>
+		</tr>
+		<tr bgcolor="#9b9ba8">
+			<td colspan="2" align="center">
+				<input type="checkbox" id="terms" name="terms">I agree to the Terms of use
+			</td>
+		</tr>
+		<tr bgcolor="#9b9ba8">
+			<td colspan="2"; align="center">
+				<input type="submit" name="Submit" class="submit">
+				<input type="reset" name="Reset" class="reset">
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</form>
+</body>
+</html>
