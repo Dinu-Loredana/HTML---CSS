@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Nested List</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: 'Times New Roman';
+			font-size: 16px;
+			letter-spacing: 1px;
+			width: 500px;
+			margin: 0 auto;
+			margin-top: 100px;
+			}
+
+		h1 {
+			font-size: 20px;
+			font-style: italic;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div style="border: 2px solid blue;">
+	<h1>Nested Lists</h1>
+	<ol type="I">
+		<li>Introduction</li>
+			<ol type="A">
+				<li>Boy's childhood</li>
+				<li>Girl's childhood</li>
+			</ol>
+		<li>Development</li>
+			<ol type="A">
+				<li>Boy meets Girl</li>
+				<li>Boy and Girl fall in love</li>
+				<li>Boy and Girl have fight</li>
+			</ol>
+		<li>Climax</li>	
+			<ol type="A">
+				<li>Boy gives Girl ultimatum</li>
+					<ol type="1">
+						<li>Girl can't believe her ears</li>
+						<li>Boy is indignant at Girl's indignance</li>
+					</ol>
+				<li>Girl tells Boys to get lost</li>
+			</ol>
+		<li>Denouement</li>
+		<li>Epilogue</li>
+	</ol>
+	</div>
+</body>
+</html>
