@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Form - MDN Challenge</title>
+	<meta name="viewport" content="width=width-device, initial-scale=1.0">
+	<style>
+		body {
+			width: 400px;
+			margin: 0 auto;
+			padding: 20px;
+			padding-top: 0px;
+			background-color: lightblue;
+		}
+
+		form {
+			border: 3px solid #7a7574;
+			padding: 10px;
+		}
+
+		legend {
+			font-weight: bold;
+			font-size: 18px;
+			}
+
+		button {
+			border-radius: 10px;
+			background-color: #000000;
+			color: #ffffff;
+			font-size: 16px;
+			padding: 10px;
+  			text-align: center;
+  			margin:auto;
+  			display:block;		 			
+		}
+	</style>
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend>Purchases</legend>
+	<p>
+		<label for="product-name">Product Name</label><br>
+		<select id="product-name" name="product-name">
+			<option value="laptop">Laptop</option>
+			<option value="phone">Phone</option>
+			<option value="ipad">Ipad</option>
+			<option value="mouse">Mouse</option>
+		</select>
+	</p>
+	<p>
+		<label for="quantity">Quantity:</label><br>
+		<input type="number" id="quantity" name="quantity" min="1" max="50">
+	</p>
+	</fieldset>
+<br>
+	<fieldset>
+		<legend>Personal details</legend>
+	<p>
+		<label for="fname">First Name</label><br>
+		<input type="text" id="fname"  name="fname">
+	</p>
+	<p>
+		<label for="lname">Last Name</label><br>
+		<input type="text" id="lname" name="lname">
+	</p>
+	</fieldset>
+<br>
+	<fieldset>
+		<legend>Credit card details</legend>
+	<p>
+		<label>Credit card type:</label><br>
+		<input type="radio" id="visa" name="card">
+		<label for="visa">Visa</label>
+	<br>
+		<input type="radio" id="mastercard" name="card">
+		<label for="mastercard">Mastercard</label>
+	</p>
+	<p>
+		<label for="ccnumber">Credit Card Number:</label><br>
+		<input id="ccnumber" name="ccnumber" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+	</p>
+	<p>
+		<label for="expdate">Expiry date</label><br>
+		<input type="date" id="expdate" name="expdate">
+	</p>	
+	</fieldset>
+<br>
+	<fieldset>
+		<legend>Billing information</legend>
+	<p>
+		<label for="postaladd">Postal Address</label><br>
+		<textarea id="postaladd" cols="30" rows="3"></textarea>
+	</p>
+	<p>
+		<label for="homeadd">Home Address</label>
+		<input type="checkbox" id="sameadd" name="sameadd">
+		<label for="sameadd">Same as above</label><br>
+		<textarea id="homeadd" cols="30" rows="3"></textarea>
+	</p>
+	</fieldset>
+<br>
+	<button type="button">Place my order</button>
+</form>
+</body>
+</html>
