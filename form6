@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form 7 - Responsive</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.container {
+			width: 100%;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+		}
+
+		.col25 {
+			width: 25%;
+			float: left;
+		}
+
+		.col75 {
+			width: 75%;
+			float: left;
+		}
+
+		.row::after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+
+		label {
+			font-size: 18px;
+			padding: 15px;
+			letter-spacing: 2px;
+		}
+
+		input[type="text"], select, textarea {
+			padding: 5px;
+			font-size: 14px;
+			width: 100%;
+		}
+
+		input[type="submit"] {
+			color: white;
+			background-color: green;
+			font-size: 16px;
+			padding: 5px 8px;
+			border: none;
+			border-radius: 5px;
+			margin-top: 20px;
+			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+		}
+
+	@media only screen and (max-width: 600px) {
+		.col25, .col75, input[type="submit"] {
+			width: 100%;
+		}
+
+		label {
+			letter-spacing: none;
+			padding: 0;
+		}
+}
+		</style>	
+	
+</head>
+<body>
+	<!-- Responsive Form using Divs, label&input-->
+	<div class="container">
+		<form action="/action_page.php">
+			<div class="row">
+				<div class="col25">
+					<label for="fname">First name</label>	
+				</div>
+				<div class="col75">
+					<input type="text" id="fname" name="fname" placeholder="Your first name...">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col25">
+					<label for="lname">Last name</label>
+				</div>
+				<div class="col75">
+					<input type="text" id="lname" name="lname" placeholder="Your last name...">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col25">
+					<label for="country">Country</label>
+				</div>
+				<div class="col75">
+					<select>
+						<option value="au" name="au">Australia</option>
+						<option value="ca" name="ca">Canada</option>
+						<option value="usa" name="usa">USA</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col25">
+					<label for="subject">Subject</label>
+				</div>
+				<div class="col75">
+					<textarea id="subject" name="subject" placeholder="Write something..." cols="40" rows="20"></textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				<input type="submit" name="submit" value="Submit">
+			</div>
+		</form>	
+	</div>
+</body>
+</html>
