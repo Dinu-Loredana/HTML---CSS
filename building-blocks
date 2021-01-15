@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Building Blocks Exercise</title>
+	<style>
+		* {
+			margin:0; 
+    		padding:0;
+		}
+
+		.container {
+			width: 600px;
+			margin-top: 40px;
+			margin-right: auto;
+			margin-left: auto;
+			overflow: hidden;
+		}
+
+		p {
+			font-size: 80px;
+			color: blue;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		.a {
+			float: left;
+			border: 5px solid blue;
+			border-radius: 15px;
+			margin-left: 150px;
+			margin-bottom: 2px;
+		}
+		
+		.b {
+			clear: left;
+			float: left;
+			border: 5px solid red;
+			border-radius: 15px;
+			margin-right: 3px;
+			margin-left: 100px;
+			margin-bottom: 2px;
+		}
+
+		.c {
+			float: left;
+			border: 5px solid green;
+			border-radius: 15px;
+			margin-bottom: 2px;
+		}
+
+		.d {
+			clear: left;
+			float: left;
+			border: 5px solid blue;
+			border-radius: 15px;
+			margin-right: 3px;
+			margin-left: 50px;
+
+		}
+		
+		.e {
+			float: left;
+			border: 5px solid green;
+			border-radius: 15px;
+			margin-right: 3px;
+		}
+
+		.f {
+			float: left;
+			border: 5px solid red;
+			border-radius: 15px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="a">
+			<p>A</p>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="b">
+			<p>B</p>
+		</div>
+		<div class="c">
+			<p>C</p>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="d">
+			<p>D</p>
+		</div>
+		<div class="e">
+			<p>E</p>
+		</div>
+		<div class="f">
+			<p>F</p>
+		</div>
+	</div>
+</body>
+</html>
