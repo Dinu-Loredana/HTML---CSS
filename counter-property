@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Counter Property</title>
+	<style>
+		body {							/* Create a counter named "section" for the page  */
+			counter-reset: section;
+		}
+	
+		h1 {
+			counter-reset: subsection;   /* Create a counter named "subsection" for the h1 */
+		}
+
+		h2 {
+			counter-reset: subsubsection;  /* Create a counter named "subsubsection" for the h2 */
+		}
+
+		h1::before {
+			counter-increment: section;
+			content: counter(section) ". ";
+		}
+
+		h2::before {
+			counter-increment: subsection;
+			content: counter(section) "." counter(subsection) " ";
+		}
+
+		h3::before {
+			counter-increment: subsubsection;
+			content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+		}
+	</style>
+</head>
+
+<body>
+	<h1>HTML</h1>
+		<h2>Tutorial</h2>
+			<h3>Elements</h3>
+			<h3>Attributs</h3>
+			<h3>Headings</h3>
+			<h3>Paragraphs</h3>
+		<h2>Forms</h2>
+			<h3>Input</h3>
+			<h3>Types</h3>
+		<h2>Graphics</h2>
+		<h2>Media</h2>
+
+	<h1>CSS</h1>
+		<h2>Tutorial</h2>
+			<h3>Float</h3>
+			<h3>Position</h3>
+			<h3>Layout</h3>
+		<h2>Advanced</h2>
+			<h3>Queries</h3>
+			<h3>Transitions</h3>
+			<h3>Transforms</h3>		
+</body>
+</html>
