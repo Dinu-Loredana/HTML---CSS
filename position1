@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Position Exercises</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			width: 800px;
+			height: 600px;
+			margin: 0 auto;
+			border:1px solid blue;
+		}
+
+		.container {
+			position: relative;
+		}
+
+		.div1 {
+			position: absolute;
+			top: 20px;
+			left: 40px;
+			border: 3px solid grey;
+			width: 250px;
+			height: 250px;
+			z-index: 1;
+			background-color: white;
+		}
+
+		.div2 {
+			position: absolute;
+			top: 200px;
+			left: 200px;
+			border: 3px solid grey;
+			width: 280px;
+			height: 200px;
+			z-index: 2;
+			background-color: white;
+		}
+
+		.div3 {
+			position: absolute;
+			top: 350px;
+			left: 40px;
+			border: 3px solid grey;
+			width: 550px;
+			height: 180px;
+			z-index: 3;
+			background-color: white;
+		}
+
+		.div4 {
+			position: absolute;
+			top: 10px;
+			left: 550px;
+			border: 3px solid grey;
+			width: 200px;
+			height: 480px;
+			z-index: 4;
+			background-color: white;
+		}
+
+		p {
+			font-size: 20px;
+			font-family: arial;
+			padding-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="div1">
+		<p>div 1</p>
+	</div>
+
+	<div class="div2">
+		<p>div 2</p>
+	</div>
+	<div class="div3">
+		<p>div 3</p>
+	</div>
+	<div class="div4">
+		<p>div 4</p>
+	</div>
+	</div>
+</body>
+</html>
