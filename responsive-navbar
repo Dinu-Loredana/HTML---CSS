@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Navbar</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			height: 1000px;
+			margin: 0;
+		}
+
+		.topnavbar {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: #bccfc6;
+			overflow: auto;
+		}
+
+		.topnavbar li {
+			float: left;
+		}
+
+		.topnavbar li a {
+			text-decoration: none;
+			color: #383838;
+			font-size: 18px;
+			font-family: verdana;
+			display: block;
+			padding: 10px;
+		}
+
+		.topnavbar li a:hover:not(.active) {
+			border-bottom: 3px solid #426353;
+		}
+
+		.active {
+			background-color: #557364;
+			border: 2px solid #557364;
+			color: #ffffff;
+		}
+
+		.active:hover {
+			color: #ffffff;
+			background-color: #426353;
+		}
+ 	
+
+ 		.gallery {
+ 			border: 1px solid #c2cfc8;
+ 		}
+		
+		.gallery:hover {
+			border: 1px solid #a2b0a8;
+		}
+
+		.gallery img {
+			width: 100%;
+			height: auto;
+		}
+
+		.desc {
+			text-align: center;
+			padding: 15px;
+		}
+
+		.responsive {
+			float: left;
+			width: 24.9999%;
+			padding: 8px 6px;
+		}
+
+		.content {
+			margin-top: 50px;
+		}
+		
+/* Responsive navbar using media queries */
+
+	@media screen and (max-width: 900px) {
+		.topnavbar {
+			width: 25%;
+			position: fixed;
+			top: 0;
+			height: 100%;
+			overflow: auto;
+		}
+
+		.topnavbar li, #dif-li {
+			display: block;
+			float: none;
+		}
+
+		.topnavbar li a:hover:not(.active) {
+			border-left: 3px solid #426353;
+			border-bottom: none;
+		}
+
+		.responsive {
+			width: 50%;
+			margin:6px 0;
+		}
+
+		.content {
+			margin-left: 25%;
+			padding: 20px;
+		}
+
+	}	
+
+	@media screen and (max-width: 600px) {
+		.topnavbar {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: #bccfc6;
+			overflow: auto;
+			width: 100%;
+    		height: auto;
+    		position: relative;
+		}
+
+		.topnavbar li, #dif-li {
+			float: none;
+		}
+
+		.topnavbar li a {
+			text-decoration: none;
+			color: #383838;
+			font-size: 15px;
+			font-family: verdana;
+			display: block;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.topnavbar li a:hover:not(.active) {
+			border-bottom: 3px solid #426353;
+		}
+
+		.active {
+			background-color: #557364;
+			border: 2px solid #557364;
+			padding: 8px;
+			color: #ffffff;
+		}
+
+		.active:hover {
+			color: #ffffff;
+			background-color: #426353;
+		}
+
+		.responsive {
+			width: 100%;
+		}
+
+		.content {
+			width: 100%;
+			margin: 5px;
+			padding: 10px;
+		}
+	}
+	</style>
+</head>
+
+<body>
+	<!-- Horizontal & vertical navbar-->
+	<ul class="topnavbar">
+		<li><a class="active" href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+	 	<li ><a href="#">Contact</a></li>
+	 	<li><a class="drop-btn" href="#">Services</a></li>
+	 </ul>
+	<div class="content">
+
+	<div class=responsive>
+		<div class="gallery">
+			<a href="#"><img src="img1.jpg" width="600" height="400"></a>
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+
+	<div class=responsive>
+		<div class="gallery">
+			<a href="#"><img src="img2.jpg" width="600" height="400"></a>
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+
+	<div class=responsive>
+		<div class="gallery">
+			<a href="#"><img src="img3.jpg" width="600" height="400"></a>
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+
+	<div class=responsive>
+		<div class="gallery">
+			<a href="#"><img src="img4.jpg" width="600" height="400"></a>
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</body>
+</html>
